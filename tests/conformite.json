@@ -1,0 +1,163 @@
+{
+  "valeurs": [
+    {
+      "nom": "entier",
+      "valeur": 1234567890123456789,
+      "canonique": "1234567890123456789",
+      "sha256": "22085aa929bcd7af4b23d9d9c046a1d4fde8be51f79d91392efafef96574ab01"
+    },
+    {
+      "nom": "zero",
+      "valeur": 0,
+      "canonique": "0",
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "nom": "negatif",
+      "valeur": -42,
+      "canonique": "-42",
+      "sha256": "fec80006df0542549b4cbaafb8987eee00bb49bca396eefe9ac8be5b5928e8f6"
+    },
+    {
+      "nom": "flottant simple",
+      "valeur": 0.1,
+      "canonique": "0.1",
+      "sha256": "14be4b45f18e0d8c67b4f719b5144eee88497e413709d11d85b096d8e2346310"
+    },
+    {
+      "nom": "flottant rond",
+      "valeur": 1.0,
+      "canonique": "1.0",
+      "sha256": "d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6"
+    },
+    {
+      "nom": "cout mesure",
+      "valeur": 2.676e-05,
+      "canonique": "2.676e-05",
+      "sha256": "f21dbea354f2d00ec41016403c2feca006a671bd9e7d0794a4bbb80db258b74b"
+    },
+    {
+      "nom": "cout long",
+      "valeur": 6.659999999999999e-05,
+      "canonique": "6.659999999999999e-05",
+      "sha256": "ee02ecf7606ca6e34e96accd75e1ad0c147e6efbb3384a9138a4570e4fefc066"
+    },
+    {
+      "nom": "tres grand",
+      "valeur": 1e+22,
+      "canonique": "1e+22",
+      "sha256": "814a97daeb45416e24befc0ae9a6414ac2f41f269a9f2f019fc65a0d03725f34"
+    },
+    {
+      "nom": "tres petit",
+      "valeur": 1e-07,
+      "canonique": "1e-07",
+      "sha256": "e485fac25775a7da830698e7daac582737fc8b43ba4b351467a16cf8ed83122a"
+    },
+    {
+      "nom": "somme flottante",
+      "valeur": 0.30000000000000004,
+      "canonique": "0.30000000000000004",
+      "sha256": "06bad31060c1212ae832de4c031f7b31e3b48aed57858294478cb19450cf34ca"
+    },
+    {
+      "nom": "vrai",
+      "valeur": true,
+      "canonique": "true",
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "nom": "nul",
+      "valeur": null,
+      "canonique": "null",
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    {
+      "nom": "chaine accentuee",
+      "valeur": "café — « x »",
+      "canonique": "\"café — « x »\"",
+      "sha256": "5c00c7477ef654268af9726281f00dc8c04464e579a6bb1957a5b6bf2a148ea7"
+    },
+    {
+      "nom": "chaine echappee",
+      "valeur": "a\"b\\c\nd\te",
+      "canonique": "\"a\\\"b\\\\c\\nd\\te\"",
+      "sha256": "e0127043d1716c8ca6a938b7e89d96244bbca272dba3306802222a2daf1fecb7"
+    },
+    {
+      "nom": "chaine de controle",
+      "valeur": "\u0001\u001f",
+      "canonique": "\"\\u0001\\u001f\"",
+      "sha256": "f815f96679a091ead4c530e4c613290cf48dd890f519c2ebc07adc3dcc596641"
+    },
+    {
+      "nom": "liste vide",
+      "valeur": [],
+      "canonique": "[]",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "nom": "objet vide",
+      "valeur": {},
+      "canonique": "{}",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "nom": "tri des cles",
+      "valeur": {
+        "b": 1,
+        "A": 2,
+        "a": 3,
+        "_": 4,
+        "é": 5
+      },
+      "canonique": "{\"A\":2,\"_\":4,\"a\":3,\"b\":1,\"é\":5}",
+      "sha256": "1ccadfb8ae1b3ec6a2f02f47cdb5333685fcca1a62ffcaf24c2152ee000a5a07"
+    },
+    {
+      "nom": "imbrique",
+      "valeur": {
+        "x": [
+          1,
+          {
+            "y": null
+          }
+        ],
+        "z": {
+          "w": [
+            true,
+            0.5
+          ]
+        }
+      },
+      "canonique": "{\"x\":[1,{\"y\":null}],\"z\":{\"w\":[true,0.5]}}",
+      "sha256": "1b40b58c59f664a27df6a81e6507c1c42540cbb6fb7ab3e480f4357f1ebcffb8"
+    }
+  ],
+  "chaine": [
+    {
+      "ligne": "{\"actions\":[],\"agent_version\":\"measure-1\",\"asks\":[{\"calls\":2,\"changed_on_escalation\":null,\"cost_usd\":2.676e-05,\"escalated_from\":null,\"tier\":\"nano\"}],\"chain\":\"sha256:895991b724461b76aabaea1645ce8edb90429be1c8774dc3b3b6276a1283877a\",\"evidence\":[],\"model_calls\":[{\"cost_usd\":1.194e-05,\"tier\":\"nano\"},{\"cost_usd\":1.482e-05,\"tier\":\"nano\"}],\"name\":\"answer\",\"outcome\":{\"action\":\"answered\",\"reason\":\"Paris\"},\"prev\":null,\"started_at\":\"2026-09-25T16:30:55Z\"}",
+      "canonique_du_corps": "{\"actions\":[],\"agent_version\":\"measure-1\",\"asks\":[{\"calls\":2,\"changed_on_escalation\":null,\"cost_usd\":2.676e-05,\"escalated_from\":null,\"tier\":\"nano\"}],\"evidence\":[],\"model_calls\":[{\"cost_usd\":1.194e-05,\"tier\":\"nano\"},{\"cost_usd\":1.482e-05,\"tier\":\"nano\"}],\"name\":\"answer\",\"outcome\":{\"action\":\"answered\",\"reason\":\"Paris\"},\"started_at\":\"2026-09-25T16:30:55Z\"}",
+      "prev": null,
+      "chain_attendu": "sha256:895991b724461b76aabaea1645ce8edb90429be1c8774dc3b3b6276a1283877a",
+      "chain_ecrit": "sha256:895991b724461b76aabaea1645ce8edb90429be1c8774dc3b3b6276a1283877a",
+      "concorde": true
+    },
+    {
+      "ligne": "{\"actions\":[],\"agent_version\":\"measure-1\",\"asks\":[{\"calls\":2,\"changed_on_escalation\":null,\"cost_usd\":6.659999999999999e-05,\"escalated_from\":null,\"tier\":\"nano\"}],\"chain\":\"sha256:47ab84e414d7238de610dc6225fe90a0e742d8b40715e202d02daa1b4a9b6dd3\",\"evidence\":[],\"model_calls\":[{\"cost_usd\":1.4459999999999999e-05,\"tier\":\"nano\"},{\"cost_usd\":5.214e-05,\"tier\":\"nano\"}],\"name\":\"answer\",\"outcome\":{\"action\":\"answered\",\"reason\":\"yes\"},\"prev\":\"sha256:895991b724461b76aabaea1645ce8edb90429be1c8774dc3b3b6276a1283877a\",\"started_at\":\"2026-09-25T16:30:57Z\"}",
+      "canonique_du_corps": "{\"actions\":[],\"agent_version\":\"measure-1\",\"asks\":[{\"calls\":2,\"changed_on_escalation\":null,\"cost_usd\":6.659999999999999e-05,\"escalated_from\":null,\"tier\":\"nano\"}],\"evidence\":[],\"model_calls\":[{\"cost_usd\":1.4459999999999999e-05,\"tier\":\"nano\"},{\"cost_usd\":5.214e-05,\"tier\":\"nano\"}],\"name\":\"answer\",\"outcome\":{\"action\":\"answered\",\"reason\":\"yes\"},\"started_at\":\"2026-09-25T16:30:57Z\"}",
+      "prev": "sha256:895991b724461b76aabaea1645ce8edb90429be1c8774dc3b3b6276a1283877a",
+      "chain_attendu": "sha256:47ab84e414d7238de610dc6225fe90a0e742d8b40715e202d02daa1b4a9b6dd3",
+      "chain_ecrit": "sha256:47ab84e414d7238de610dc6225fe90a0e742d8b40715e202d02daa1b4a9b6dd3",
+      "concorde": true
+    },
+    {
+      "ligne": "{\"actions\":[],\"agent_version\":\"measure-1\",\"asks\":[{\"calls\":2,\"changed_on_escalation\":null,\"cost_usd\":2.676e-05,\"escalated_from\":null,\"tier\":\"nano\"}],\"chain\":\"sha256:c5db8acfb89367d11fe765bf0900b877e18f094596f6c0531a1a292a1bc87d47\",\"evidence\":[],\"model_calls\":[{\"cost_usd\":1.1220000000000001e-05,\"tier\":\"nano\"},{\"cost_usd\":1.554e-05,\"tier\":\"nano\"}],\"name\":\"answer\",\"outcome\":{\"action\":\"answered\",\"reason\":\"Yellow\"},\"prev\":\"sha256:47ab84e414d7238de610dc6225fe90a0e742d8b40715e202d02daa1b4a9b6dd3\",\"started_at\":\"2026-09-25T16:31:00Z\"}",
+      "canonique_du_corps": "{\"actions\":[],\"agent_version\":\"measure-1\",\"asks\":[{\"calls\":2,\"changed_on_escalation\":null,\"cost_usd\":2.676e-05,\"escalated_from\":null,\"tier\":\"nano\"}],\"evidence\":[],\"model_calls\":[{\"cost_usd\":1.1220000000000001e-05,\"tier\":\"nano\"},{\"cost_usd\":1.554e-05,\"tier\":\"nano\"}],\"name\":\"answer\",\"outcome\":{\"action\":\"answered\",\"reason\":\"Yellow\"},\"started_at\":\"2026-09-25T16:31:00Z\"}",
+      "prev": "sha256:47ab84e414d7238de610dc6225fe90a0e742d8b40715e202d02daa1b4a9b6dd3",
+      "chain_attendu": "sha256:c5db8acfb89367d11fe765bf0900b877e18f094596f6c0531a1a292a1bc87d47",
+      "chain_ecrit": "sha256:c5db8acfb89367d11fe765bf0900b877e18f094596f6c0531a1a292a1bc87d47",
+      "concorde": true
+    }
+  ]
+}

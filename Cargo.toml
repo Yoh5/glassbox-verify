@@ -1,0 +1,16 @@
+# Aucune dépendance, et c'est l'argument du binaire.
+#
+# Ce vérificateur existe pour qu'un auditeur contrôle un registre sans faire
+# confiance à celui qui l'a écrit. Un exécutable autonome est une promesse
+# qu'on peut tenir ; un arbre de dépendances, fût-il excellent, est une
+# promesse qu'il faudrait auditer à son tour.
+[package]
+name = "glassbox-verify"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[profile.release]
+lto = true
+strip = true
